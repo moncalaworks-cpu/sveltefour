@@ -1,5 +1,3 @@
-
-
 # Random
 
 Here is a random page that has no structure, no purpose, and no goals. Sometimes I just want to capture the weird, wackiness that is my brain.
@@ -33,5 +31,16 @@ Here is a random page that has no structure, no purpose, and no goals. Sometimes
 ## Scheduled Rituals
 - Daily - morning brief, end review
 - Weekly - Planning, Dev Blocks, Learning
-- Monthly - Planning
-- Yearly - Planning
+- Monthly - 4 Week + 1 IP
+- Yearly - Quarterly Planning
+
+
+## Maintenance Chores
+- Diet - Food, Drink 
+	- Drink - Coffee, Fiber, Smoothie, Tea
+	- Food - Oats, Yogurt, Eggs, Cheese, Steak, Broccoli, Sweet Potato
+- Exercise - Cardio, Strength, Mobility
+- Equipment - Electronics, Clothing, Toiletries
+- Auto - Regular Maintenance, Gas
+- Home - Indoor, Outdoor Cleanliness
+

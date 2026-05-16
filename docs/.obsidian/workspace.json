@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PM-SYSTEM.md",
+                "file": "reviews/2026-05-20-weekly-review.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PM-SYSTEM"
+              "title": "2026-05-20-weekly-review"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reviews/2026-05-20-weekly-review.md",
+                "file": "INBOX.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-20-weekly-review"
+              "title": "INBOX"
             }
           },
           {
@@ -213,15 +213,16 @@
   },
   "active": "0de82bfbe36c6e6c",
   "lastOpenFiles": [
+    "INBOX.md",
     "reviews/2026-05-20-weekly-review.md",
+    "RANDOM.md",
+    "PROJECT.md",
+    "stories/2026-05-16-health-check-command.md",
+    "GUARDRAIL_FEATURE.md",
     "PM-SYSTEM.md",
     "ROADMAP.md",
-    "RANDOM.md",
-    "INBOX.md",
     "PROGRESS.md",
-    "GUARDRAIL_FEATURE.md",
     "reviews/TEMPLATE.md",
-    "stories/2026-05-16-health-check-command.md",
     "reviews",
     "stories",
     "CONTENT_CURATION.md",
@@ -239,7 +240,6 @@
     "Tasks/animated-transitions.md",
     "Tasks/dark-mode-toggle.md",
     "Components/Projects Section.md",
-    "PROJECT.md",
     "DECISIONS.md",
     "Daily/2026-05-15.md",
     "Components/About Section.md",
