@@ -1,0 +1,30 @@
+{
+  "topics": [
+    {
+      "id": "qa-testing",
+      "name": "QA Testing & Automation",
+      "keywords": ["test automation", "QA engineering", "selenium", "playwright", "appium", "automated testing", "test frameworks"],
+      "enabled": true
+    },
+    {
+      "id": "ai-qa",
+      "name": "AI in QA & Test Automation",
+      "keywords": ["AI testing", "machine learning QA", "test generation AI", "intelligent testing", "AI automation"],
+      "enabled": true
+    }
+  ],
+  "searchSettings": {
+    "maxResultsPerTopic": 5,
+    "includeYouTube": true,
+    "includeArticles": true,
+    "includePodcasts": true,
+    "minPublicationAge": "1 week",
+    "maxPublicationAge": "3 months"
+  },
+  "draftSettings": {
+    "summaryLength": 250,
+    "maxSources": 5,
+    "author": "Ken Shinzato",
+    "draftBranch": "content/drafts"
+  }
+}
