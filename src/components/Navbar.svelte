@@ -45,10 +45,8 @@
 	});
 
 	const links = [
-		{ label: 'About', href: '/#about' },
-		{ label: 'Experience', href: '/#experience' },
-		{ label: 'Projects', href: '/#projects' },
-		{ label: 'Skills', href: '/#skills' },
+		{ label: 'Products', href: '/products' },
+		{ label: 'Cart', href: '/cart' },
 		{ label: 'Contact', href: '/#contact' }
 	];
 
