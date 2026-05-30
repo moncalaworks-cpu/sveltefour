@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INBOX.md",
+                "file": "ACCEPTANCE_CRITERIA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INBOX"
+              "title": "ACCEPTANCE_CRITERIA"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INBOX.md",
+                "file": "ACCEPTANCE_CRITERIA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for INBOX"
+              "title": "Backlinks for ACCEPTANCE_CRITERIA"
             }
           },
           {
@@ -198,10 +198,12 @@
   },
   "active": "ff949aaa46b6c4bb",
   "lastOpenFiles": [
+    "PROJECT_OVERVIEW.md",
+    "RANDOM.md",
+    "ACCEPTANCE_CRITERIA.md",
+    "INBOX.md",
     "CONTENT_CURATION.md",
     "reviews/2026-05-20-weekly-review.md",
-    "INBOX.md",
-    "RANDOM.md",
     "PROJECT.md",
     "stories/2026-05-16-health-check-command.md",
     "GUARDRAIL_FEATURE.md",
@@ -226,8 +228,6 @@
     "Tasks/dark-mode-toggle.md",
     "Components/Projects Section.md",
     "DECISIONS.md",
-    "Daily/2026-05-15.md",
-    "Components/About Section.md",
     "Tasks",
     "_Templates",
     "Components/Projects Section.md.tmp.4380.7fd9775f4cd9",
