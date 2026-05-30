@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import type { RequestHandler } from '@sveltejs/kit';
 import type { CartItem, Order } from '$lib/types';
 import { generateProducts } from '$lib/products';
+import { sendOrderConfirmationEmail } from '$lib/email.server';
 
 // Store orders in memory (for MVP - replace with database in production)
 const orders = new Map<string, Order>();
@@ -71,6 +72,11 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		// Store order
 		orders.set(orderId, order);
+
+		// Send confirmation email (async, don't wait for it)
+		sendOrderConfirmationEmail(order).catch((err) => {
+			console.error('Failed to send confirmation email:', err);
+		});
 
 		// For now, return the order ID and amounts
 		// In Phase 3, we'll create a Stripe PaymentIntent here
