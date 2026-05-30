@@ -1,4 +1,3 @@
-import { getAllPosts } from '$lib/blog';
 import type { RequestHandler } from '@sveltejs/kit';
 
 interface SitemapUrl {
@@ -10,17 +9,9 @@ interface SitemapUrl {
 
 export const GET: RequestHandler = async () => {
 	const BASE = 'https://kenshinzato.dev';
-	const posts = await getAllPosts();
 
 	const urls: SitemapUrl[] = [
-		{ loc: BASE, changefreq: 'monthly', priority: '1.0' },
-		{ loc: `${BASE}/blog`, changefreq: 'weekly', priority: '0.8' },
-		...posts.map((post) => ({
-			loc: `${BASE}/blog/${post.slug}`,
-			lastmod: post.date,
-			changefreq: 'monthly',
-			priority: '0.7'
-		}))
+		{ loc: BASE, changefreq: 'monthly', priority: '1.0' }
 	];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>

@@ -30,10 +30,6 @@
 	function handleCtaClick(ctaText: string) {
 		analytics.ctaClick(ctaText);
 	}
-
-	function handleResumeDownload() {
-		analytics.fileDownload('resume.pdf', 'pdf');
-	}
 </script>
 
 <section class="min-h-[600px] w-full bg-white dark:bg-slate-950 flex items-center justify-center transition-colors duration-200">
@@ -81,19 +77,6 @@
 				class="inline-flex px-8 py-3 border-2 border-slate-900 dark:border-slate-50 text-slate-900 dark:text-slate-50 font-medium rounded-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 hover:scale-105 active:scale-95"
 			>
 				{secondaryCta}
-			</a>
-
-			<!-- Resume Download Button -->
-			<a
-				href="/documents/resume.pdf"
-				download="Ken-Shinzato-Resume.pdf"
-				onclick={handleResumeDownload}
-				class="inline-flex px-8 py-3 border-2 border-slate-400 dark:border-slate-600 text-slate-900 dark:text-slate-50 font-medium rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 hover:scale-105 active:scale-95"
-			>
-				<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm6-10V7a3 3 0 00-3-3H9a3 3 0 00-3 3v4" />
-				</svg>
-				Download Resume
 			</a>
 		</div>
 

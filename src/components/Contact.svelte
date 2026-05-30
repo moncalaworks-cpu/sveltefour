@@ -32,10 +32,6 @@
 	function handleEmailClick() {
 		analytics.navigationClick('contact-email');
 	}
-
-	function handleResumeDownload() {
-		analytics.fileDownload('resume.pdf', 'pdf');
-	}
 </script>
 
 <section id="contact" class="bg-white dark:bg-slate-900 py-20 sm:py-24 lg:py-32 transition-colors duration-200">
@@ -108,20 +104,6 @@
 								</div>
 							</div>
 
-							<!-- Resume Download -->
-							<div class="pt-4 border-t border-slate-200 dark:border-slate-800">
-								<a
-									href="/documents/resume.pdf"
-									download="Ken-Shinzato-Resume.pdf"
-									onclick={handleResumeDownload}
-									class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-slate-50 text-white dark:text-slate-900 font-medium rounded-lg hover:bg-slate-800 dark:hover:bg-slate-200 transition-all duration-200 hover:scale-105 active:scale-95"
-								>
-									<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm6-10V7a3 3 0 00-3-3H9a3 3 0 00-3 3v4" />
-									</svg>
-									Download Resume
-								</a>
-							</div>
 						</div>
 					</div>
 				{/snippet}

@@ -4,7 +4,6 @@
 	import Experience from '../components/Experience.svelte';
 	import Projects from '../components/Projects.svelte';
 	import Skills from '../components/Skills.svelte';
-	import BlogPreview from '../components/BlogPreview.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -160,8 +159,6 @@ With expertise in test automation tools (Selenium, Robot Framework, Appium) and 
 		layout="categories"
 		showProficiency={true}
 	/>
-
-	<BlogPreview posts={data.latestPosts} />
 
 	<!-- Contact Section -->
 	<section id="contact" class="bg-white dark:bg-slate-900 py-20 sm:py-24 lg:py-32 transition-colors duration-200">

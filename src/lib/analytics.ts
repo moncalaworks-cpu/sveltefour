@@ -56,15 +56,6 @@ export const analytics = {
 	},
 
 	/**
-	 * Track blog post views
-	 * @param slug - Blog post slug
-	 * @param title - Optional blog post title
-	 */
-	blogPostView: (slug: string, title?: string) => {
-		track('Blog Post View', { slug, title });
-	},
-
-	/**
 	 * Track project interest/clicks
 	 * @param projectName - Project name or identifier
 	 * @param action - Action taken (e.g., 'view', 'link-click')

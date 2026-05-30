@@ -5,7 +5,7 @@
 	interface ProjectLink {
 		label: string;
 		url: string;
-		icon?: 'github' | 'link' | 'blog';
+		icon?: 'github' | 'link';
 	}
 
 	interface Project {
@@ -45,7 +45,7 @@
 				technologies: ['React', 'D3.js', 'Node.js', 'MongoDB', 'Redis'],
 				links: [
 					{ label: 'GitHub', url: '#', icon: 'github' },
-					{ label: 'Case Study', url: '#', icon: 'blog' }
+					{ label: 'Live Demo', url: '#', icon: 'link' }
 				]
 			},
 			{
@@ -81,8 +81,6 @@
 				return 'github';
 			case 'link':
 				return 'link';
-			case 'blog':
-				return 'blog';
 			default:
 				return undefined;
 		}
@@ -185,17 +183,6 @@
 														stroke-linejoin="round"
 														stroke-width="2"
 														d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6-6m0 0L21 3m0 0v6m0 0H15"
-													/>
-												</svg>
-											</span>
-										{:else if link.icon === 'blog'}
-											<span class="inline-flex w-4 h-4">
-												<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-													<path
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
-														d="M13 10V3L4 14h7v7l9-11h-7z"
 													/>
 												</svg>
 											</span>
