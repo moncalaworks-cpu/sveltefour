@@ -58,14 +58,22 @@
 			});
 
 			if (!response.ok) {
-				const error = await response.json();
-				formError = error.message || 'Checkout failed. Please try again.';
+				const errorData = await response.json();
+				formError = errorData.message || 'Checkout failed. Please try again.';
 				isSubmitting = false;
 				return;
 			}
 
 			const data = await response.json();
-			window.location.href = `/confirmation/${data.orderId}`;
+			if (data.success && data.orderId) {
+				// Clear cart after successful order
+				cartItems.clear();
+				// Redirect to confirmation page
+				window.location.href = `/confirmation/${data.orderId}`;
+			} else {
+				formError = 'Failed to create order. Please try again.';
+				isSubmitting = false;
+			}
 		} catch (error) {
 			formError = 'An error occurred. Please try again.';
 			console.error('Checkout error:', error);
