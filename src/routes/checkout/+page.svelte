@@ -66,10 +66,13 @@
 
 			const data = await response.json();
 			if (data.success && data.orderId) {
-				// Clear cart after successful order
-				cartItems.clear();
-				// Redirect to confirmation page
-				window.location.href = `/confirmation/${data.orderId}`;
+				// Redirect to payment page with order details
+				const params = new URLSearchParams({
+					amount: data.amount.toString(),
+					name: name,
+					email: email
+				});
+				window.location.href = `/payment/${data.orderId}?${params.toString()}`;
 			} else {
 				formError = 'Failed to create order. Please try again.';
 				isSubmitting = false;
